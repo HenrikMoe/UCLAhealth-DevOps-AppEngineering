@@ -9,12 +9,18 @@ This script contains notes and changes that get the PyMaze working from the gist
 
 ## Developer notes - Henrik Moe 2/8/24 - 
 
-1) After successfully reaching the exit of the maze the maze does not acknowledge     # success and does not reset. 2) After consuming item noting happens
+1) After successfully reaching the exit of the maze the maze does not acknowledge success and does not reset.
+
+2) After consuming item noting happens
 
 ## Diganosis:  
 
-1) if maze[player_pos[0]][player_pos[1]] == EXIT:# the first item returns the players icon, the second will     # always be exit. 2) no ideas for the item note
+1) if maze[player_pos[0]][player_pos[1]] == EXIT:# the first item returns the players icon, the second will always be exit.
+
+2) no ideas for the item note
 
 ## Solutions: 
 
-1) Hardcode the exit coordinates into the if comparison. 2) Write additional logic to store the exits' location. 
+1) Hardcode the exit coordinates into the if comparison.
+
+2) Write additional logic to store the exits' location. 
