@@ -2,7 +2,11 @@
 
 Terraform example dir within Ucla health cloud infrastructure
 
-Yaml Terraform example: https://github.com/HenrikMoe/UCLAhealth-DevOps-AppEngineering/blob/master/terraformSimple.yaml
+Simple terraform yaml file: https://github.com/HenrikMoe/UCLAhealth-DevOps-AppEngineering/blob/master/terraformSimple.yaml
+
+Terraform file within terraform package global var context: https://github.com/HenrikMoe/UCLAhealth-DevOps-AppEngineering/blob/master/terraformSimple.yaml
+
+Terraform example dir: 
 
 ```python
 
