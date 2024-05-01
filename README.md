@@ -4,6 +4,8 @@ Terraform example dir within Ucla health cloud infrastructure
 
 Yaml Terraform example: 
 
+#python
+
 terraform/
 |-- main.tf
 |-- modules/
@@ -24,6 +26,7 @@ terraform/
 |-- terraform.tfvars
 |-- provider.tf
 
+#python
 
 ## [PyMaze Critiques](./pymazeNotes.py)
 
