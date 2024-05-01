@@ -1,6 +1,6 @@
 ## Henrik Moe / DevOps & App Engineering
 
-Terraform example dir within Ucla health cloud infrastructure
+Assuming multiple terraform packages in UCLA Health cloud infrastructure
 
 Simple terraform yaml file: https://github.com/HenrikMoe/UCLAhealth-DevOps-AppEngineering/blob/master/terraformSimple.yaml
 
