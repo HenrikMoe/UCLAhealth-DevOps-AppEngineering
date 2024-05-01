@@ -1,6 +1,28 @@
-## Henrik Moe / UCLA Data Transfer Project Reference
+## Henrik Moe / DevOps & App Engineering
 
-Welcome to to my project reference. We are at the interview phase. 
+Terraform example dir within Ucla health cloud infrastructure
+
+Yaml Terraform example: 
+
+terraform/
+|-- main.tf
+|-- modules/
+|   |-- web_server/
+|   |   |-- main.tf
+|   |   |-- variables.tf
+|   |   |-- outputs.tf
+|   |-- database/
+|   |   |-- main.tf
+|   |   |-- variables.tf
+|   |   |-- outputs.tf
+|-- scripts/
+|   |-- deploy.sh
+|-- .gitignore
+|-- README.md
+|-- variables.tf
+|-- outputs.tf
+|-- terraform.tfvars
+|-- provider.tf
 
 
 ## [PyMaze Critiques](./pymazeNotes.py)
