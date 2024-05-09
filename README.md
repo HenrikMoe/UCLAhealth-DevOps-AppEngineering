@@ -4,7 +4,7 @@ Assuming multiple terraform packages in UCLA Health cloud infrastructure
 
 Needs docker-compose files for img and container cleaning
 
-Needs iam privaleges/graph query privaleges
+Needs iam privaleges/graph query privaleges + variable port routing
 
 Simple terraform yaml file: https://github.com/HenrikMoe/UCLAhealth-DevOps-AppEngineering/blob/master/terraformSimple.yaml
 
