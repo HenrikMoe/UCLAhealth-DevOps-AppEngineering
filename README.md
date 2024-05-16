@@ -2,6 +2,8 @@
 
 Open tofu migration for UCLA Health cloud infrastructure
 
+OpenTofu Dir:
+
 Needs docker-compose files for img and container cleaning
 
 Needs iam privaleges/graph query privaleges + variable port routing
