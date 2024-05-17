@@ -1,0 +1,20 @@
+cidr overview
+classless inter domain routing 
+
+CIDR block defines the IP address range of the VPC from the providers hardware.For example, 10.0.0.0/16 provides up to 65,536 IP 
+addresses.
+
+/num suffixes to vpc ip determine the division of of bites between the networking and hosting elements of the env 
+
+for example 192.168.1.0/24 gives 24 bits to the networking and 8 to the hosting (32 bits in an ip address) 
+
+this is called subnet masking (or declaring)
+
+we include routing tables aka opentofu files with networking vars 
+- this includes subnets which are portioned part of the ipaddress
+
+you can run a container right in a network without an instance (ask gpt)
+
+
+full example at the limits of the maths here of the ip bit shit 
+
