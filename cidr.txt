@@ -18,3 +18,74 @@ you can run a container right in a network without an instance (ask gpt)
 
 full example at the limits of the maths here of the ip bit shit 
 
+If the VPC has a CIDR block of 192.168.0.0/16, you can create multiple subnets within this VPC. For instance:
+* 192.168.1.0/24: A subnet with 256 addresses (254 usable for hosts, after reserving network and broadcast addresses).
+* 192.168.2.0/24: Another subnet within the same VPC, also with 256 addresses.
+
+like how do these relate because of the third ip slot? 
+basically if you use a 24 bit versus a 16 you have free domain over only the last octet up to value 255, /16 reserves the thrid octet 
+space to go up to 255
+
+* The 192.168.1 part is the network portion (24 bits).
+so what is outside of the network portion?
+just the final hosting value octet 
+
+* The 0-255 range in 192.168.1.0/24 are the host addresses.
+what does this mean like ports?
+yea ports are on the host 
+
+In a /24 subnet, the host portion (the last 8 bits) allows for 256 unique addresses, typically allocated as follows:
+* 192.168.1.0: Network address (reserved).
+* 192.168.1.1 to 192.168.1.254: Usable addresses for hosts (VMs, containers, etc.).
+* 192.168.1.255: Broadcast address (reserved).
+
+So what is the relationship between the host portion bits and unique addresses?
+* VPC CIDR Block: 10.0.0.0/16
+    * Subnets:
+        * 10.0.1.0/24 for Admin
+        * 10.0.2.0/24 for Development
+        * 10.0.3.0/24 for Testing
+This provides 254 usable IP addresses per subnet, which is suitable for smaller teams or departments.
+* VPC CIDR Block: 10.0.0.0/16
+    * Subnets:
+        * 10.0.0.0/17 for HR
+        * 10.0.128.0/17 for Finance
+This provides a large number of IP addresses (32,768 per subnet in the example above) for each division.
+
+then what is the difference between 254 and 255 and what about all the other 253 addresses?
+could there be ports on each address?
+yes
+
+
+Assume you have a VPC with CIDR block 192.168.0.0/16, and you declare a subnet 192.168.1.0/24. Here's how it might be used:
+1. Network Portion (24 bits): 192.168.1.
+    * Used by routing tables to direct traffic within the VPC.
+    * Defines the subnet within the VPC.
+how? i need a opentofu context of this chat and if you dont know that do terraform and use something even lower level too to really 
+explain it to me how this is implemented if thats easier but show the tofu/terraform
+observe above 
+
+
+Host Portion (8 bits): 0-255. 
+is this in the fourth slot?
+yes
+
+* Assignable to various devices and services within the subnet.
+* Example addresses:
+    * 192.168.1.10: Web server.
+    * 192.168.1.20: Database server.
+    * 192.168.1.30: Docker container running a microservice.
+    * 192.168.1.40: Load balancer.
+so chat can you show me managingin all this again with like terraform with port details and security group stuff in the aws context 
+above is example
+
+
+The /24 subnet mask provides a balance between having enough addresses for hosts and maintaining manageable network sizes.
+can you show me what not having enough addresses and an unmagable network size would look like? 
+maxxing a /24 subnet mask with needing 300 hosts for some reason
+
+
+* Subnets: Subdivisions within the VPC, each with its own CIDR block. For example, 10.0.1.0/24 and 10.0.2.0/24 are subnets within the 
+10.0.0.0/16 VPC.
+what constrains the 3rd slot and how are the suffixes in the subnets and parent vpc related, the /24 and /16?
+
