@@ -12,7 +12,7 @@ https://github.com/HenrikMoe/UCLAhealth-DevOps-AppEngineering/blob/master/OpenTo
 
 
 
-## ~Dep~ Terraform: 
+## ~~Dep~~ Terraform: 
 
 
 Dep OpenTofu file within terraform package global var context: https://github.com/HenrikMoe/UCLAhealth-DevOps-AppEngineering/blob/master/globalVars.yaml
