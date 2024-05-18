@@ -2,17 +2,26 @@
 
 Open tofu migration for UCLA Health cloud infrastructure
 
-# OpenTofu Dir:
+## OpenTofu Dir:
 
-Simple terraform yaml file: https://github.com/HenrikMoe/UCLAhealth-DevOps-AppEngineering/blob/master/terraformSimple.yaml
+Open Tofu configuration examples with yaml and eng:
 
-Terraform file within terraform package global var context: https://github.com/HenrikMoe/UCLAhealth-DevOps-AppEngineering/blob/master/globalVars.yaml
+https://github.com/HenrikMoe/UCLAhealth-DevOps-AppEngineering/blob/master/OpenTofu.txt
+
+### example dir
+
+
+
+## Dep Terraform: 
+
+
+Dep OpenTofu file within terraform package global var context: https://github.com/HenrikMoe/UCLAhealth-DevOps-AppEngineering/blob/master/globalVars.yaml
 
 Needs docker-compose files for img and container cleaning
 
 Needs iam privaleges/graph query privaleges + variable port routing
 
-# Terraform example dir: 
+### example dir
 
 ```python
 
