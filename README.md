@@ -1,4 +1,4 @@
-## Henrik Moe / DevOps & App Engineering
+## Infrastructure Engineering 
 
 Open tofu migration for UCLA Health cloud infrastructure
 
