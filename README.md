@@ -12,7 +12,7 @@ https://github.com/HenrikMoe/UCLAhealth-DevOps-AppEngineering/blob/master/OpenTo
 
 
 
-## Dep Terraform: 
+## ~Dep~ Terraform: 
 
 
 Dep OpenTofu file within terraform package global var context: https://github.com/HenrikMoe/UCLAhealth-DevOps-AppEngineering/blob/master/globalVars.yaml
@@ -47,7 +47,7 @@ terraform/
 
 ```
 
-## [PyMaze Critiques](./pymazeNotes.py)
+## ~Dep~ [PyMaze Critiques](./pymazeNotes.py)
 
 This script contains notes and changes that get the PyMaze working from the gist: https://gist.github.com/super-phreak/e6a700d4807e6a7c83348cb469b3280a.
 
