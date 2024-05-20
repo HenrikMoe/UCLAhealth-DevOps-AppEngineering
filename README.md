@@ -12,7 +12,7 @@ Prompt: https://uclahealthcloud.notion.site/Senior-Cloud-DevOps-Engineer-flex-hy
 
 ## Configure Inputs
 
-Open main.tf in the TerraformAssignment directory and code an import of resources or change hardcode.
+Open main.tf in the root ./TerraformAssignment directory. Change the code to import resources or change the hardcoded key/value pairs: 
 
 ```
   resource_map = {
