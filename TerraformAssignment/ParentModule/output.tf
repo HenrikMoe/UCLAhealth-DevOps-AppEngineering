@@ -3,7 +3,7 @@
 
 output "resource_names" {
 
-  # initialize 'value' in child module's interfaces
+  # extract keys and values from map and repack into child interface
 
   value = { for k, v in module.resource_names : k => v.resource_name }
 
