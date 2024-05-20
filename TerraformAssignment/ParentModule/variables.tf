@@ -1,7 +1,7 @@
 
 ###
 
-# declare a map type for passing input to the child module transformation interface
+# declare a map type for passing input in main
 
 variable "resource_map" {
 
