@@ -28,9 +28,18 @@ Expand configuration by initializing [resource] deployment terraform functionali
 Open tofu migration for UCLA Health cloud infrastructure
 
 
-Simple terraform yaml file: https://github.com/HenrikMoe/UCLAhealth-DevOps-AppEngineering/blob/master/terraformSimple.yaml
+Open Tofu configuration examples with yaml and eng:
 
-Terraform file within terraform package global var context: https://github.com/HenrikMoe/UCLAhealth-DevOps-AppEngineering/blob/master/globalVars.yaml
+https://github.com/HenrikMoe/UCLAhealth-DevOps-AppEngineering/blob/master/OpenTofu.txt
+
+### example dir
+
+
+
+## ~~Dep~~ Terraform:
+
+
+Dep OpenTofu file within terraform package global var context: https://github.com/HenrikMoe/UCLAhealth-DevOps-AppEngineering/blob/master/globalVars.yaml
 
 Needs docker-compose files for img and container cleaning
 
@@ -62,7 +71,7 @@ terraform/
 
 ```
 
-## [PyMaze Critiques](./pymazeNotes.py)
+## ~Dep~ [PyMaze Critiques](./pymazeNotes.py)
 
 This script contains notes and changes that get the PyMaze working from the gist: https://gist.github.com/super-phreak/e6a700d4807e6a7c83348cb469b3280a.
 
