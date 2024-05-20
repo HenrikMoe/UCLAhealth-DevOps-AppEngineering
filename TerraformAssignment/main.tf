@@ -5,10 +5,12 @@
 
 module "parent_module" {
 
-  source = "./ParentModule"  # Adjust the path as necessary
+  #parent module import 
+
+  source = "./ParentModule"  
 
 
-  # initialize the resource naming assisngment here
+  # reconfigure the resource naming assignments here
 
   resource_map = {
     "vm_1_config" = "virtual_machine"
@@ -18,7 +20,7 @@ module "parent_module" {
 
 }
 
-# output declaration for all name possibilities from the ParentModule main (child in this case)
+# output the layered declaration for all name possibilities from the ParentModule (child in this case)
 
 output "resource_names" {
 
