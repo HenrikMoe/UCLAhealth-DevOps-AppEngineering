@@ -1,29 +1,29 @@
-## Interview Assignment (5/20/2024)
+# Interview Assignment (5/20/2024)
 
 cd TerraformAssignment
 
-# Purpose and Output
+## Purpose and Output
 
 Create resource names given a set of rules, max modularity and clarity for production.
 
-# Configure
+## Configure
 
 Open main.tf in the TerraformAssignment directory and code an import of resources or change hardcode.
 
-# Commands
+## Commands
 
 terraform init
 
 terraform apply
 
-# Development Path
+## Development Path
 
 Expand configuration by initializing [resource] deployment terraform functionality.
 
-# Deprecated ->>>
+# ~Deprecated ->>>~
 
 
-# OpenTofu Dir:
+## OpenTofu Dir:
 
 Open tofu migration for UCLA Health cloud infrastructure
 
