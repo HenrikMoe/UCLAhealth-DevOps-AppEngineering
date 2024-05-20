@@ -5,7 +5,7 @@
 
 module "parent_module" {
 
-  #parent module import 
+  # parent module import 
 
   source = "./ParentModule"  
 
