@@ -6,11 +6,19 @@ Create resource names for a given set of rules.
 
 Open main.tf in the local directory and code an import of resources or hardcode like it is currently.
 
+```
+  resource_map = {
+    "vm_1_config" = "virtual_machine"
+    "hospital_System_A_Key" = "key_vault"
+    "patient_record" = "storage_account"
+  }
+```
+
 # Commands
 
-terraform init
+`terraform init`
 
-terraform apply
+`terraform apply`
 
 # Dev Path
 
