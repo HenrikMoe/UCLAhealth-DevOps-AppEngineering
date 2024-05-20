@@ -20,7 +20,7 @@ terraform apply
 
 Expand configuration by initializing [resource] deployment terraform functionality.
 
-# End
+# Deprecated ->>>
 
 
 # OpenTofu Dir:
