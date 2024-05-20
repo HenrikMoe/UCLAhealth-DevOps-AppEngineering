@@ -1,8 +1,8 @@
 # Interview Assignment (5/20/2024)
 
-'git clone'
+`git clone`
 
-'cd TerraformAssignment'
+`cd TerraformAssignment`
 
 ## Terraform Assignment Purpose and Output
 
@@ -14,13 +14,13 @@ Open main.tf in the TerraformAssignment directory and code an import of resource
 
 ## Commands
 
-'terraform init'
+`terraform init`
 
-'terraform apply'
+`terraform apply`
 
 ## Development Path
 
-Expand configuration by initializing [resource] deployment terraform functionality.
+Expand configuration by initializing [resource] deployment terraform functionality. Routing. 
 
 
 
