@@ -1,5 +1,7 @@
 # Interview Assignment (5/20/2024)
 
+Prompt: https://uclahealthcloud.notion.site/Senior-Cloud-DevOps-Engineer-flex-hybrid-Terraform-Prompt-47d1bf8c25ac436aba283d0260f2698c
+
 `git clone`
 
 `cd TerraformAssignment`
