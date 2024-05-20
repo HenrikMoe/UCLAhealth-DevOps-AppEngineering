@@ -25,7 +25,7 @@ Expand configuration by initializing [resource] deployment terraform functionali
 
 
 
-## Deprecated ->>>>>>>>>>
+## Deprecated ->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
 ## OpenTofu Dir:
