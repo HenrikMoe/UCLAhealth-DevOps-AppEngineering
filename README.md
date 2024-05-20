@@ -25,7 +25,11 @@ Open main.tf in the root of the ./TerraformAssignment directory. Change the code
 
 ## Commands
 
+Initialize the terraform configuration file set.
+
 `terraform init`
+
+Apply code changes to the terraform configuration.
 
 `terraform apply`
 
