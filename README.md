@@ -1,8 +1,32 @@
-## Infrastructure Engineering 
+## Interview Assignment (5/20/2024)
+
+cd TerraformAssignment
+
+# Purpose and Output
+
+Create resource names given a set of rules, max modularity and clarity for production.
+
+# Configure
+
+Open main.tf in the TerraformAssignment directory and code an import of resources or change hardcode.
+
+# Commands
+
+terraform init
+
+terraform apply
+
+# Development Path
+
+Expand configuration by initializing [resource] deployment terraform functionality.
+
+# End
+
+
+# OpenTofu Dir:
 
 Open tofu migration for UCLA Health cloud infrastructure
 
-# OpenTofu Dir:
 
 Simple terraform yaml file: https://github.com/HenrikMoe/UCLAhealth-DevOps-AppEngineering/blob/master/terraformSimple.yaml
 
@@ -12,7 +36,7 @@ Needs docker-compose files for img and container cleaning
 
 Needs iam privaleges/graph query privaleges + variable port routing
 
-# Terraform example dir: 
+# Terraform example dir:
 
 ```python
 
@@ -42,7 +66,7 @@ terraform/
 
 This script contains notes and changes that get the PyMaze working from the gist: https://gist.github.com/super-phreak/e6a700d4807e6a7c83348cb469b3280a.
 
-## Developer notes - Henrik Moe 2/8/24 - 
+## Developer notes - Henrik Moe 2/8/24 -
 
 1) After successfully reaching the exit of the maze the maze does not acknowledge success and does not reset.
 
@@ -54,8 +78,8 @@ This script contains notes and changes that get the PyMaze working from the gist
 
 2) no ideas for the item note
 
-## Solutions: 
+## Solutions:
 
 1) Hardcode the exit coordinates into the if comparison.
 
-2) Write additional logic to store the exits' location. 
+2) Write additional logic to store the exits' location.
