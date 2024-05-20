@@ -1,26 +1,31 @@
 # Interview Assignment (5/20/2024)
 
-cd TerraformAssignment
+'git clone'
 
-## Purpose and Output
+'cd TerraformAssignment'
+
+## Terraform Assignment Purpose and Output
 
 Create resource names given a set of rules, max modularity and clarity for production.
 
-## Configure
+## Configure Software 
 
 Open main.tf in the TerraformAssignment directory and code an import of resources or change hardcode.
 
 ## Commands
 
-terraform init
+'terraform init'
 
-terraform apply
+'terraform apply'
 
 ## Development Path
 
 Expand configuration by initializing [resource] deployment terraform functionality.
 
-# ~Deprecated ->>>~
+
+
+
+## Deprecated ->>>>>>>>>>
 
 
 ## OpenTofu Dir:
