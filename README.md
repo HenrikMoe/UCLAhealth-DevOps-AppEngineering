@@ -35,7 +35,7 @@ Apply code changes to the terraform configuration.
 
 ## Development Path
 
-Expand configuration by initializing [resource] deployment terraform functionality. Routing. 
+Expand configuration by initializing [resource] deployment terraform functionality. Routing. Env secrets. 
 
 
 
