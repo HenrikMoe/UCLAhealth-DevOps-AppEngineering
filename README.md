@@ -25,7 +25,7 @@ Open main.tf in the root of the ./TerraformAssignment directory. Change the code
 
 ## Commands
 
-Install terraform (mac os with homebrew package manager) 
+Install terraform (Mac OS with homebrew package manager) 
 
 `brew install terraform`
 
