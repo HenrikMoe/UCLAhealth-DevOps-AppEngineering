@@ -6,6 +6,8 @@ Welcome.
 
 `git clone https://github.com/HenrikMoe/UCLAhealth-DevOps-AppEngineering.git`
 
+`cd UCLAhealth-DevOps-AppEngineering`
+
 ## The latest interview assignment is located on branch '6-6-interview-assignment'.
 
 `git checkout 6-6-interview-assignment`
