@@ -4,7 +4,7 @@ Welcome.
 
 ## Clone This Project Tree
 
-git clone https://github.com/HenrikMoe/UCLAhealth-DevOps-AppEngineering.git
+`git clone https://github.com/HenrikMoe/UCLAhealth-DevOps-AppEngineering.git`
 
 ## The latest interview assignment is located on branch '6-6-interview-assignment'.
 
