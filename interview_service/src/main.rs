@@ -2,12 +2,15 @@ use reqwest::Error;
 use std::collections::HashMap;
 use csv::Writer;
 
+
 // Import the structs from the separate file
 use crate::structs::{PopulationData, Record, YearlyRecord, StateData};
 use crate::interfaces::{calculate_percent_change, get_latest_year_prime_factors, get_latest_year_string};
 
 mod structs;
 mod interfaces;
+mod csv;
+
 
 #[tokio::main]
 async fn main() -> Result<(), Error> {
@@ -61,20 +64,22 @@ async fn main() -> Result<(), Error> {
 
          println!("State Data Map Bulk Calculation of the prime factorization with latest year: {:?}", state_data_vec);
        
-
+         match csv::write_state_data_to_csv(&state_data_vec) {
+            Ok(_) => (),
+            Err(e) => {
+                // Handle the error here
+                println!("Error writing state data to CSV: {:?}", e);
+            }
+        }
         
+        } else {
+            println!("Request failed with status code: {}", response.status());
+        }
+    
+        Ok(())
+    }
 
-
-
-
-
-
-
-
-
-
-
-
+    
 
 
 
@@ -162,9 +167,4 @@ async fn main() -> Result<(), Error> {
         */
         
         //println!("Yearly record object: {:?}", state_data_map);
-    } else {
-        println!("Request failed with status code: {}", response.status());
-    }
 
-    Ok(())
-}
