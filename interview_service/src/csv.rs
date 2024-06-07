@@ -8,7 +8,7 @@ pub fn write_state_data_to_csv(state_data: &[StateData]) -> Result<(), Box<dyn E
     let mut writer = Writer::from_path("output.csv")?;
 
     // Write header row
-    writer.write_record(&["State Name", "Population and Percentage Change", "Years", "Latest Year", "Prime Factors"])?;
+   // writer.write_record(&["State Name", "Population and Percentage Change", "Years", "Latest Year", "Prime Factors"])?;
 
     // Write data for each state
     for data in state_data {
@@ -23,17 +23,34 @@ pub fn write_state_data_to_csv(state_data: &[StateData]) -> Result<(), Box<dyn E
 
         let prime_factors_str = data.prime_factors.values().cloned().collect::<Vec<_>>().join(";");
 
+        let squarelandia_str: String = "Squarelandia".to_string();
 
         
         writer.write_record(&[
             &data.state_name,
-            &data.records.iter().map(|r| r.year.clone()).collect::<Vec<_>>().join(";"),
+            &data.records.iter().map(|r| r.year.clone()).collect::<Vec<_>>().join(","),
             &data.latest_year,
+            // &squarelandia_str, // Use the String type
+            // //new row here even tho we are still looking at the same state 
+            // &population_and_percentage.join(";"), // Join population and percentage strings
+            // // &data.placeholder,
+            // &prime_factors_str, // Write the prime factors string
+        ])?;
+
+        writer.write_record(&[
+            // &data.state_name,
+            // &data.records.iter().map(|r| r.year.clone()).collect::<Vec<_>>().join(";"),
+            // &data.latest_year,
+            &squarelandia_str, // Use the String type
             //new row here even tho we are still looking at the same state 
-            &population_and_percentage.join(";"), // Join population and percentage strings
+            &population_and_percentage.join(","), // Join population and percentage strings
             // &data.placeholder,
             &prime_factors_str, // Write the prime factors string
         ])?;
+
+       
+
+    
     }
 
     // Flush the writer to ensure all data is written to the file
