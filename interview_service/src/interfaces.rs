@@ -49,7 +49,7 @@ pub fn get_latest_year_prime_factors(state_data_map: &HashMap<String, Vec<Yearly
         if let Some(latest_record) = records.iter().max_by_key(|record| record.year.parse::<u16>().unwrap_or(0)) {
             let factors = prime_factors(latest_record.population);
             let factors_str = factors.iter().map(|&f| f.to_string()).collect::<Vec<String>>().join(";");
-            let result_str = format!("{} ({})", latest_record.year, factors_str);
+            let result_str = format!("{}", factors_str);
             yearly_factors.insert(latest_record.year.clone(), result_str);
         }
 
