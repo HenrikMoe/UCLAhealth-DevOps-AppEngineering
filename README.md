@@ -8,6 +8,10 @@ Welcome.
 
 `cd UCLAhealth-DevOps-AppEngineering`
 
+## Already Cloned? 
+
+`git pull`
+
 ## Checkout the latest interview assignment on branch '6-6-interview-assignment'.
 
 `git checkout 6-6-interview-assignment`
