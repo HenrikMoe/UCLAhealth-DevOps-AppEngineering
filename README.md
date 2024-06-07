@@ -6,6 +6,6 @@ Welcome.
 
 `git checkout 6-6-interview-assignment`
 
-## The Terraform SR. Dev Ops Assignemnt is on the 'backup-branch'.
+## The Terraform SR. Dev Ops assignment is on the 'backup-branch'.
 
 `git checkout backup-branch`
