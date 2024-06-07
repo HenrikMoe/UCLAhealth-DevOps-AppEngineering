@@ -2,7 +2,7 @@
 
 Welcome.
 
-## Clone 
+## Clone This Project Tree
 
 git clone https://github.com/HenrikMoe/UCLAhealth-DevOps-AppEngineering.git
 
