@@ -23,12 +23,15 @@ pub fn write_state_data_to_csv(state_data: &[StateData]) -> Result<(), Box<dyn E
 
         let prime_factors_str = data.prime_factors.values().cloned().collect::<Vec<_>>().join(";");
 
+
+        
         writer.write_record(&[
             &data.state_name,
             &data.records.iter().map(|r| r.year.clone()).collect::<Vec<_>>().join(";"),
             &data.latest_year,
-            &'Squarelandia',
+            //new row here even tho we are still looking at the same state 
             &population_and_percentage.join(";"), // Join population and percentage strings
+            // &data.placeholder,
             &prime_factors_str, // Write the prime factors string
         ])?;
     }

@@ -56,6 +56,7 @@ async fn main() -> Result<(), Error> {
             state_data_vec.push(StateData {
                  state_name: state_name.clone(),
                  records: records.clone(),
+                //  placeholder: "Squarelandia".to_string(), // Assign the placeholder value
                  prime_factors: prime_factors_for_state, // Get prime factors for the state
                  latest_year: get_latest_year_string(&records),
              });
