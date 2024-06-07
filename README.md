@@ -8,7 +8,7 @@ Welcome.
 
 `cd UCLAhealth-DevOps-AppEngineering`
 
-## The latest interview assignment is located on branch '6-6-interview-assignment'.
+## Checkout the latest interview assignment on branch '6-6-interview-assignment'.
 
 `git checkout 6-6-interview-assignment`
 
