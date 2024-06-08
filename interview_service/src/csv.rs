@@ -8,49 +8,50 @@ pub fn write_state_data_to_csv(state_data: &[StateData]) -> Result<(), Box<dyn E
     let mut writer = Writer::from_path("output.csv")?;
 
     // Write header row
-   // writer.write_record(&["State Name", "Population and Percentage Change", "Years", "Latest Year", "Prime Factors"])?;
+    // Uncomment and modify if header row is needed
+    // writer.write_record(&["State Name", "Years", "Population and Percentage", "Latest Year", "Squarelandia", "Prime Factors"])?;
+
+    println!("State data before csv write record: {:?}", state_data);
 
     // Write data for each state
     for data in state_data {
         let mut population_and_percentage = Vec::new();
-        for (i, record) in data.records.iter().enumerate() {
+        for record in &data.records {
             let mut pop_percent_str = record.population.to_string();
             if let Some(percent_change) = &record.percent_change {
-                pop_percent_str.push_str(&format!(" {:}", percent_change)); // Append percentage change if available
+                pop_percent_str.push_str(&format!(" {}", percent_change)); // Append percentage change if available
             }
             population_and_percentage.push(pop_percent_str);
         }
 
+        println!("population and percentage debug {:?}", population_and_percentage);
+        println!(
+            "year debug {:?}",
+            data.records.iter().map(|r| r.year.clone()).collect::<Vec<_>>().join(","),
+        );
+
         let prime_factors_str = data.prime_factors.values().cloned().collect::<Vec<_>>().join(";");
 
         let squarelandia_str: String = "Squarelandia".to_string();
+        let years: Vec<String> = data.records.iter().map(|r| r.year.clone()).collect();
 
-        
-        writer.write_record(&[
-            &data.state_name,
-            &data.records.iter().map(|r| r.year.clone()).collect::<Vec<_>>().join(","),
-            &data.latest_year,
-            // &squarelandia_str, // Use the String type
-            // //new row here even tho we are still looking at the same state 
-            // &population_and_percentage.join(";"), // Join population and percentage strings
-            // // &data.placeholder,
-            // &prime_factors_str, // Write the prime factors string
-        ])?;
+        println!("year debug2 {:?}", years);
 
-        writer.write_record(&[
-            // &data.state_name,
-            // &data.records.iter().map(|r| r.year.clone()).collect::<Vec<_>>().join(";"),
-            // &data.latest_year,
-            &squarelandia_str, // Use the String type
-            //new row here even tho we are still looking at the same state 
-            &population_and_percentage.join(","), // Join population and percentage strings
-            // &data.placeholder,
-            &prime_factors_str, // Write the prime factors string
-        ])?;
+        // Write the first part of the record
+        let mut first_record = vec![data.state_name.clone()];
+        first_record.extend(years.iter().cloned());
+        first_record.push("2022 Factors".to_string());
 
-       
+        writer.write_record(&first_record)?;
+        println!("First record debug {:?}", &first_record);
 
-    
+        // Write the second part of the record
+        let mut second_record = vec![squarelandia_str.clone()];
+        second_record.extend(population_and_percentage.iter().cloned());
+        second_record.push(prime_factors_str.clone());
+
+        writer.write_record(&second_record)?;
+        println!("Second record debug {:?}", &second_record);
     }
 
     // Flush the writer to ensure all data is written to the file
