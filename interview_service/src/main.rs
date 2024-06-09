@@ -1,11 +1,9 @@
 (/* 
    
 This module contains the main function executed by cargo run. 
-The JSON to CSV processing begins with the exectution of this function. 
-The Rust Http library is called for handling the declartion of the JSON in the program. 
-The structs module laces data from the JSON into Rust objects that we can permutate. 
-The interfaces module provides transformation functions compatible with the structs. 
-The csv module outputs the requested csv to the interview_service directory level. 
+Rust Http library 'reqwest' is called for handling the declartion of the JSON api in the program. 
+The structs and interfaces modules are called to extract and analyze the data. 
+The csv module completes the job in the requested output. 
 
 ====================
 

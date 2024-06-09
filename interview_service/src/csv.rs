@@ -1,7 +1,7 @@
 (/* 
    
 This module contains the write_state_data_to_csv function. 
-The function is applied as the last step in the data processing in the parent main module. 
+The function is applied as the last step in the data processing in the main module. 
 The result of this function is an exported CSV after iterating through the StateData struct for data elements. 
 
 ====================
