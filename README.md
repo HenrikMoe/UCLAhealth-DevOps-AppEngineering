@@ -8,21 +8,21 @@ Report: View the raw .pptx report labeled `6-6-Interview-Report.pptx` in this di
 
 (Windows)
 
-`Invoke-WebRequest -Uri https://win.rustup.rs/x86_64 -OutFile rustup-init.exe; Start-Process .\rustup-init.exe -Wait
+#### `Invoke-WebRequest -Uri https://win.rustup.rs/x86_64 -OutFile rustup-init.exe; Start-Process .\rustup-init.exe -Wait
 `
 
 (Mac)
 
-`curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`
+#### `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`
 
 Verify Installation (Both OS)
 
-`rustc --version`
+#### `rustc --version`
 
-#### ->] Run the service 
+## ->] Run the service 
 
-`cd interview_service`
+#### `cd interview_service`
 
-`cargo run`
+#### `cargo run`
 
-#### ->] The service produces 'outputs.csv' in the interview_service directory level.
+## ->] The service produces 'outputs.csv' in the interview_service directory level.
