@@ -1,3 +1,20 @@
+(/* 
+   
+This module contains the write_state_data_to_csv function. 
+The function is applied as the last step in the data processing in the parent main module. 
+The result of this function is an exported CSV after iterating through the StateData struct for data elements. 
+
+====================
+
+- author: Henrik Moe
+- version: 0
+- date: 08 June 2024
+
+====================
+
+
+ */)
+
 use std::error::Error;
 use std::fs::File;
 pub use csv::Writer;

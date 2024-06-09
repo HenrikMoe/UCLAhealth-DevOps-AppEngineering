@@ -1,3 +1,22 @@
+(/* 
+   
+This module contains the structs for declaring data from the JSON payload into workable rust objects. 
+The Record struct is the first to interface with the JSON payload. 
+The PopulationData struct contains lists of Record structs. 
+The Yearly record struct further organizes the data with placeholders for desired analysis attributes. 
+The state data aggreagates and provides further placeholders for desired analysis attributes. 
+
+====================
+
+- author: Henrik Moe
+- version: 0
+- date: 08 June 2024
+
+====================
+
+
+ */)
+
 use serde::Deserialize;
 use std::collections::HashMap;
 

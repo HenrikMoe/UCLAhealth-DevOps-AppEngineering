@@ -1,3 +1,24 @@
+(/* 
+   
+This module contains the main function executed by cargo run. 
+The JSON to CSV processing begins with the exectution of this function. 
+The Rust Http library is called for handling the declartion of the JSON in the program. 
+The structs module laces data from the JSON into Rust objects that we can permutate. 
+The interfaces module provides transformation functions compatible with the structs. 
+The csv module outputs the requested csv to the interview_service directory level. 
+
+====================
+
+- author: Henrik Moe
+- version: 0
+- date: 08 June 2024
+
+====================
+
+
+ */)
+
+
 use reqwest::Error;
 use std::collections::HashMap;
 use csv::Writer;
@@ -83,89 +104,4 @@ async fn main() -> Result<(), Error> {
     
 
 
-
-
-
-
-
-
-        // let mut state_data_vec: Vec<StateData> = Vec::new();
-
-        // for (state_name, records) in state_data_map {
-        //     state_data_vec.push(StateData {
-        //         state_name,
-        //         records,
-        //     });
-        // }
-
-        // // Serialize to CSV
-        // let file_path = "output.csv";
-        // let mut wtr = Writer::from_path(file_path)?;
-
-        // // Write headers
-        // wtr.write_record(&["StateName", "Year", "Population", "PercentChange", "PrimeNumbers"])?;
-
-        // // Write records
-        // for state_data in state_data_vec {
-        //     for record in state_data.records {
-        //         let prime_numbers = record.prime_number.map_or(String::new(), |prime| prime.to_string());
-        //         wtr.write_record(&[
-        //             &state_data.state_name,
-        //             &record.year,
-        //             &record.population.to_string(),
-        //             &record.percent_change.unwrap_or(0.0).to_string(),
-        //             &prime_numbers,
-        //         ])?;
-        //     }
-        // }
-
-        // wtr.flush()?;
- 
-        // Uncomment this section to serialize to CSV if needed
-        /*
-        let mut state_data_vec: Vec<StateData> = Vec::new();
-
-        for (state_name, records) in state_data_map {
-            state_data_vec.push(StateData {
-                state_name,
-                records,
-            });
-        }
-
-        // Serialize to CSV
-        let file_path = "output.csv";
-        let mut wtr = Writer::from_path(file_path)?;
-
-        // Write headers
-        wtr.write_record(&["StateName", "Record", "PrimeNumbers"])?;
-
-        // Write records
-        for state_data in state_data_vec {
-            let mut record_line = String::new();
-            let mut prime_numbers = String::new();
-
-            for record in state_data.records {
-                if !record_line.is_empty() {
-                    record_line.push(';');
-                }
-                record_line.push_str(&format!(
-                    "{} {} {}",
-                    record.year, record.population, record.percent_change.unwrap_or(0.0)
-                ));
-                if let Some(prime) = record.prime_number {
-                    if !prime_numbers.is_empty() {
-                        prime_numbers.push_str("; ");
-                    }
-                    prime_numbers.push_str(&prime.to_string());
-                }
-            }
-
-            wtr.write_record(&[&state_data.state_name, &record_line, &prime_numbers])?;
-        }
-
-        wtr.flush()?;
-        println!("Data successfully written to {}", file_path);
-        */
-        
-        //println!("Yearly record object: {:?}", state_data_map);
 
