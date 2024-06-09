@@ -2,9 +2,7 @@
 
 Prompt: https://uclahealthcloud.notion.site/Programming-Review-Prompt-25849e2e76c04a9197cf68f654a6295b
 
-Report: View the raw .pptx report labeled 6-6-Interview-Report.pptx in this directory level
-
-rust install for windows and mac 
+Report: View the raw .pptx report labeled `6-6-Interview-Report.pptx` in this directory level
 
 #### Installing Rust 
 
