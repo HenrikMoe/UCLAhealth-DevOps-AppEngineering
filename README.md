@@ -1,6 +1,6 @@
 # UCLA Health DevOp & App Engineering 
 
-Welcome.
+Welcome. Feel free to email me at henrikmoe29@gmail.com with any questions. 
 
 ### Clone This Project Tree
 
