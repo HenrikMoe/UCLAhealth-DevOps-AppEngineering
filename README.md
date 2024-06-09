@@ -4,4 +4,6 @@ Prompt: https://uclahealthcloud.notion.site/Programming-Review-Prompt-25849e2e76
 
 #### ->] Run the servce to produce 'outputs.csv' in the root of this directory 
 
+`cd interview_service`
+
 `cargo run`
