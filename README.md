@@ -8,8 +8,7 @@ Report: View the raw .pptx report labeled `6-6-Interview-Report.pptx` in this di
 
 (Windows)
 
-#### `Invoke-WebRequest -Uri https://win.rustup.rs/x86_64 -OutFile rustup-init.exe; Start-Process .\rustup-init.exe -Wait
-`
+#### `Invoke-WebRequest -Uri https://win.rustup.rs/x86_64 -OutFile rustup-init.exe; Start-Process .\rustup-init.exe -Wait`
 
 (Mac)
 
