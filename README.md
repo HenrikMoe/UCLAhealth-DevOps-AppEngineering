@@ -1,16 +1,16 @@
 # JSON to CSV Rust Service 
 
-Prompt: https://uclahealthcloud.notion.site/Programming-Review-Prompt-25849e2e76c04a9197cf68f654a6295b
++ Prompt: https://uclahealthcloud.notion.site/Programming-Review-Prompt-25849e2e76c04a9197cf68f654a6295b
 
-Report: View the raw .pptx report labeled `6-6-Interview-Report.pptx` in this directory level
++ Report: View the raw .pptx report labeled `6-6-Interview-Report.pptx` in this directory level
 
 #### Installing Rust 
 
-(Windows)
++ Windows
 
 ```Invoke-WebRequest -Uri https://win.rustup.rs/x86_64 -OutFile rustup-init.exe; Start-Process .\rustup-init.exe -Wait```
 
-(Mac)
++ Mac
 
 ```curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh```
 
