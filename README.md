@@ -18,10 +18,10 @@ Verify Installation (Both OS)
 
 ```rustc --version```
 
-+ ->] Run the service 
+#### Run the service ->]
 
 ```cd interview_service```
 
 ```cargo run```
 
-+ ->] The service produces 'outputs.csv' in the interview_service directory level.
++ The service returns 'outputs.csv' in the interview_service directory level.
