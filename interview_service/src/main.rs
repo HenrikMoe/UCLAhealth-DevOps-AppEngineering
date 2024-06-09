@@ -1,4 +1,4 @@
-(/* 
+/* 
    
 This module contains the main function executed by cargo run. 
 Rust Http library 'reqwest' is called for handling the declartion of the JSON api in the program. 
@@ -14,16 +14,15 @@ The csv module completes the job in the requested output.
 ====================
 
 
- */)
+ */
 
 
 use reqwest::Error;
 use std::collections::HashMap;
-use csv::Writer;
 
 
 // Import the structs from the separate file
-use crate::structs::{PopulationData, Record, YearlyRecord, StateData};
+use crate::structs::{PopulationData, YearlyRecord, StateData};
 use crate::interfaces::{calculate_percent_change, get_latest_year_prime_factors, get_latest_year_string};
 
 mod structs;
@@ -66,7 +65,7 @@ async fn main() -> Result<(), Error> {
 
         // Get prime factors for the latest year's population for each state
         let prime_factors_map = get_latest_year_prime_factors(&state_data_map);
-        println!("State Data Map Bulk Calculation of the prime factorization: {:?}", prime_factors_map);
+       // println!("State Data Map Bulk Calculation of the prime factorization: {:?}", prime_factors_map);
 
         let mut state_data_vec: Vec<StateData> = Vec::new();
 
@@ -82,7 +81,7 @@ async fn main() -> Result<(), Error> {
         }
         
 
-         println!("State Data Map Bulk Calculation of the prime factorization with latest year: {:?}", state_data_vec);
+         println!("All done XD ");
        
          match csv::write_state_data_to_csv(&state_data_vec) {
             Ok(_) => (),

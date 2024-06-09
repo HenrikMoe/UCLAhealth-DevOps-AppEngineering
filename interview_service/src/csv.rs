@@ -1,4 +1,4 @@
-(/* 
+/* 
    
 This module contains the write_state_data_to_csv function. 
 The function is applied as the last step in the data processing in the main module. 
@@ -13,10 +13,9 @@ The result of this function is an exported CSV after iterating through the State
 ====================
 
 
- */)
+ */
 
 use std::error::Error;
-use std::fs::File;
 pub use csv::Writer;
 use crate::structs::StateData;
 
@@ -28,7 +27,7 @@ pub fn write_state_data_to_csv(state_data: &[StateData]) -> Result<(), Box<dyn E
     // Uncomment and modify if header row is needed
     // writer.write_record(&["State Name", "Years", "Population and Percentage", "Latest Year", "Squarelandia", "Prime Factors"])?;
 
-    println!("State data before csv write record: {:?}", state_data);
+    //println!("State data before csv write record: {:?}", state_data);
 
     // Write data for each state
     for data in state_data {
@@ -41,18 +40,18 @@ pub fn write_state_data_to_csv(state_data: &[StateData]) -> Result<(), Box<dyn E
             population_and_percentage.push(pop_percent_str);
         }
 
-        println!("population and percentage debug {:?}", population_and_percentage);
-        println!(
-            "year debug {:?}",
-            data.records.iter().map(|r| r.year.clone()).collect::<Vec<_>>().join(","),
-        );
+        //println!("population and percentage debug {:?}", population_and_percentage);
+        // println!(
+        //     "year debug {:?}",
+        //     data.records.iter().map(|r| r.year.clone()).collect::<Vec<_>>().join(","),
+        // );
 
         let prime_factors_str = data.prime_factors.values().cloned().collect::<Vec<_>>().join(";");
 
         let squarelandia_str: String = "Squarelandia".to_string();
         let years: Vec<String> = data.records.iter().map(|r| r.year.clone()).collect();
 
-        println!("year debug2 {:?}", years);
+        //println!("year debug2 {:?}", years);
 
         // Write the first part of the record
         let mut first_record = vec![data.state_name.clone()];
@@ -60,7 +59,7 @@ pub fn write_state_data_to_csv(state_data: &[StateData]) -> Result<(), Box<dyn E
         first_record.push("2022 Factors".to_string());
 
         writer.write_record(&first_record)?;
-        println!("First record debug {:?}", &first_record);
+       //println!("First record debug {:?}", &first_record);
 
         // Write the second part of the record
         let mut second_record = vec![squarelandia_str.clone()];
@@ -68,7 +67,7 @@ pub fn write_state_data_to_csv(state_data: &[StateData]) -> Result<(), Box<dyn E
         second_record.push(prime_factors_str.clone());
 
         writer.write_record(&second_record)?;
-        println!("Second record debug {:?}", &second_record);
+        //println!("Second record debug {:?}", &second_record);
     }
 
     // Flush the writer to ensure all data is written to the file

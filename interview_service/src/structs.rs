@@ -1,4 +1,4 @@
-(/* 
+/* 
    
 This module contains the structs for declaring data from the JSON payload into workable rust objects. 
 The Record struct is the first to interface with the JSON payload. 
@@ -15,7 +15,7 @@ The state data aggreagates and provides further placeholders for desired analysi
 ====================
 
 
- */)
+ */
 
 use serde::Deserialize;
 use std::collections::HashMap;

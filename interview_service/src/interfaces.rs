@@ -1,4 +1,4 @@
-(/* 
+/* 
    
 This module contains functions for returing desired analysis attributes from the dataset. 
 The functions below are applied in the main module to the structs module. 
@@ -12,7 +12,7 @@ The functions below are applied in the main module to the structs module.
 ====================
 
 
- */)
+ */
 
 use std::collections::HashMap;
 use crate::structs::YearlyRecord;
