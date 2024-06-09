@@ -12,16 +12,16 @@ Report: View the raw .pptx report labeled `6-6-Interview-Report.pptx` in this di
 
 (Mac)
 
-`curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`
+```curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh```
 
 Verify Installation (Both OS)
 
-#### `rustc --version`
+```rustc --version```
 
 ## ->] Run the service 
 
-#### `cd interview_service`
+```cd interview_service```
 
-#### `cargo run`
+```cargo run```
 
 ## ->] The service produces 'outputs.csv' in the interview_service directory level.
