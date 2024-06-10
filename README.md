@@ -22,5 +22,5 @@ Welcome. Feel free to email me at henrikmoe29@gmail.com with any questions.
 
 `git checkout backup-branch`
 
-View the branch's README.md to run the package.
++ View the branch's README.md to run the package.
 
