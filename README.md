@@ -18,7 +18,7 @@ Verify Installation (Both OS)
 
 ```rustc --version```
 
-### Run the service ->]
+## Run the service ->]
 
 ```cd interview_service```
 
