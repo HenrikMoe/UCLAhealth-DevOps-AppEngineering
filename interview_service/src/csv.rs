@@ -23,10 +23,6 @@ pub fn write_state_data_to_csv(state_data: &[StateData]) -> Result<(), Box<dyn E
     // Create a new file named output.csv
     let mut writer = Writer::from_path("output.csv")?;
 
-    // Write header row
-    // Uncomment and modify if header row is needed
-    // writer.write_record(&["State Name", "Years", "Population and Percentage", "Latest Year", "Squarelandia", "Prime Factors"])?;
-
     //println!("State data before csv write record: {:?}", state_data);
 
     // Write data for each state

@@ -41,6 +41,7 @@ async fn main() -> Result<(), Error> {
 
         let mut state_data_map: HashMap<String, Vec<YearlyRecord>> = HashMap::new();
 
+        // Thread out the json into structs
         for record in population_data.data {
             state_data_map
                 .entry(record.state.clone())

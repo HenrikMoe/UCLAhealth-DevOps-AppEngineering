@@ -54,7 +54,5 @@ pub struct StateData {
     pub state_name: String,
     pub records: Vec<YearlyRecord>,
     pub latest_year: String,
-    //pub placeholder: String, // Add a field for the placeholder value
-    // pub population_and_percentage: String, // Include a field for population and percentage
     pub prime_factors: HashMap<String, String>, // HashMap with String keys and values
 }
