@@ -14,7 +14,7 @@
 
 ```curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh```
 
-Verify Installation (Both OS)
++ Verify Installation (Both OS)
 
 ```rustc --version```
 
