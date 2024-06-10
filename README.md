@@ -12,7 +12,7 @@ Welcome. Feel free to email me at henrikmoe29@gmail.com with any questions. 👾
 
 `git pull`
 
-### Checkout the latest interview assignment on branch '6-6-interview-assignment'. 👀
+### Checkout the '6-6-interview-assignment'. 👀
 
 `git checkout 6-6-interview-assignment`
 
