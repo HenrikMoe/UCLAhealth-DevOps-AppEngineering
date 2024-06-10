@@ -4,7 +4,7 @@
 
 + The report is named `6-6-Interview-Report.pptx` and is in this directory level.
 
-#### Installing Rust 
+### Installing Rust 
 
 + Windows
 
@@ -18,7 +18,7 @@ Verify Installation (Both OS)
 
 ```rustc --version```
 
-#### Run the service ->]
+### Run the service ->]
 
 ```cd interview_service```
 
