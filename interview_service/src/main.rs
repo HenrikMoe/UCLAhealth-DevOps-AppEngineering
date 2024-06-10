@@ -81,7 +81,7 @@ async fn main() -> Result<(), Error> {
         }
         
 
-         println!("All done XD ");
+         println!("All done XD. Check interview_service directory for output.csv");
        
          match csv::write_state_data_to_csv(&state_data_vec) {
             Ok(_) => (),
