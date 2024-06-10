@@ -1,4 +1,4 @@
-# JSON to CSV Rust Service 
+# JSON to CSV Rust Service  💻 ⚖️ 
 
 + Prompt: https://uclahealthcloud.notion.site/Programming-Review-Prompt-25849e2e76c04a9197cf68f654a6295b
 
@@ -24,4 +24,4 @@
 
 ```cargo run```
 
-+ The service returns 'output.csv' in the interview_service directory level.
++ The service returns 'output.csv' in the interview_service directory level 🔥
