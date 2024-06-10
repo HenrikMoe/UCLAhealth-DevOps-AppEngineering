@@ -16,6 +16,11 @@ Welcome. Feel free to email me at henrikmoe29@gmail.com with any questions.
 
 `git checkout 6-6-interview-assignment`
 
+View the README.md to run the package.
+
 ### The Terraform SR. Dev Ops assignment is on the 'backup-branch'.
 
 `git checkout backup-branch`
+
+View the README.md to run the package.
+
