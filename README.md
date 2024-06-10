@@ -24,4 +24,4 @@ Verify Installation (Both OS)
 
 ```cargo run```
 
-+ The service returns 'outputs.csv' in the interview_service directory level.
++ The service returns 'output.csv' in the interview_service directory level.
